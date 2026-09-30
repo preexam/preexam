@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Panel</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="topbar"><div class="brand">EXAM PORTAL ADMIN</div><nav><a href="index.html">Public Portal</a></nav></header>
+<main class="container">
+<section id="adminLoginCard" class="card narrow"><h1>Admin Login</h1><form id="adminLogin"><label>Email<input id="adminEmail" type="email" required></label><label>Password<input id="adminPassword" type="password" required></label><button class="btn primary">Login</button><p id="adminMsg" class="message"></p></form></section>
+<section id="adminApp" hidden>
+<div class="admin-head"><div><h1>Admin Dashboard</h1><p id="adminWelcome" class="muted"></p></div><button id="logout" class="btn">Logout</button></div>
+<div id="stats" class="grid-4"></div>
+<div class="tabs">
+<button data-tab="exams">Exams</button><button data-tab="applications">Applications</button><button data-tab="payments">Payments</button><button data-tab="admit">Admit Cards</button><button data-tab="results">Results</button><button data-tab="centres">Centres</button><button data-tab="fields">Form Builder</button><button data-tab="notices">Notices</button><button data-tab="audit">Audit Log</button>
+</div>
+<div id="panel" class="card"></div>
+</section></main>
+<script type="module" src="js/admin.js"></script></body></html>
